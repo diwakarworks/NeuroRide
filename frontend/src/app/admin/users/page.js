@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { fetchUsers, toggleUserStatus, verifyDriver } from "@/app/lib/api/adminActions.mjs";
+import { fetchUsers, toggleUserStatus, verifyDriver } from "@/app/lib/api/adminActions.js";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import {Home} from "lucide-react";
