@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { fetchDashboardStats } from "@/app/lib/api/dashboard.js";
+import { fetchDashboardStats } from "@/app/lib/api/dashboard.mjs";
 import AdminLayout from "@/app/components/AdminLayout";
 import { motion } from "framer-motion";
 
