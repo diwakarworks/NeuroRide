@@ -5,10 +5,22 @@ import { fetchDrivers } from "@/app/services/driverService";
 import axios from "axios";
 import { FaCar, FaMotorcycle, FaTaxi, FaTruck } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { Suspense } from "react";
+
+
+const FindDrivers = () => {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <FindDriversContent />
+    </Suspense>
+  );
+};
+
+
 
 const API_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
 
-const FindDrivers = () => {
+const FindDriversContent = () => {
   const searchParams = useSearchParams();
   const router = useRouter();
   const pickup = searchParams.get("pickup");
