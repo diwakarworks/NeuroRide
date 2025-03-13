@@ -1,6 +1,6 @@
 "use server"
 
-const API_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
+
 
 const getAuthHeaders = () => ({
   "Content-Type": "application/json",
@@ -8,6 +8,7 @@ const getAuthHeaders = () => ({
 });
 
 export const fetchUsers = async () => {
+  const API_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
   const res = await fetch(`${API_URL}/api/admin/users`, {
     headers: getAuthHeaders(),
   });
@@ -16,6 +17,7 @@ export const fetchUsers = async () => {
 
 
 export const toggleUserStatus = async (id) => {
+  const API_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
   await fetch(`${API_URL}/api/admin/users/${id}/status`, {
     method: "PATCH",
     headers: getAuthHeaders(),
@@ -25,6 +27,7 @@ export const toggleUserStatus = async (id) => {
 };
 
 export const verifyDriver = async (id) => {
+  const API_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
   const res =  fetch(`${API_URL}/api/admin/verify/${id}`, {
     method: "PATCH",
     headers: getAuthHeaders(),
