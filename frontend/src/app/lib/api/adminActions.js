@@ -4,7 +4,7 @@ const API_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
 
 
 
-export const fetchUsers = async (token)) => {
+export const fetchUsers = async (token) => {
   const res = await fetch(`${API_URL}/api/admin/users`, {
      headers: {
       "Content-Type": "application/json",
