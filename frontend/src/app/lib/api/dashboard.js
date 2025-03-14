@@ -12,8 +12,7 @@ const getAuthHeaders = () => ({
 
 export const fetchDashboardStats = async () => {
   const res = await fetch(`${API_URL}/api/admin/stats`, {
-     headers: getAuthHeaders(),
-     
+     headers: getAuthHeaders(),     
   });
 
   if (!res.ok) {
