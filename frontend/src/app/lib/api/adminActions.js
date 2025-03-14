@@ -11,8 +11,7 @@ const getAuthHeaders = () => ({
 
 export const fetchUsers = async () => {
   const res = await fetch(`${API_URL}/api/admin/users`, {
-      headers: getAuthHeaders(),
-       
+      headers: getAuthHeaders(),       
   });
 
   if (!res.ok) {
@@ -21,7 +20,7 @@ export const fetchUsers = async () => {
   return res.json();
 };
 
-export const toggleUserStatus = async (id,) => {
+export const toggleUserStatus = async (id) => {
   const res = await fetch(`${API_URL}/api/admin/users/${id}/status`, {
     method: "PATCH",
     headers: getAuthHeaders(),
@@ -33,7 +32,7 @@ export const toggleUserStatus = async (id,) => {
   return res.json();
 };
 
-export const verifyDriver = async (id,token) => {
+export const verifyDriver = async (id) => {
   const res = await fetch(`${API_URL}/api/admin/verify/${id}`, {
     method: "PATCH",
     headers: getAuthHeaders(),
