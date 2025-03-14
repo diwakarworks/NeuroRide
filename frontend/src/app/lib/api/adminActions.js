@@ -8,31 +8,34 @@ const getAuthHeaders = () => ({
 });
 
 
-export const fetchUsers = async (token) => {
+export const fetchUsers = async () => {
   const res = await fetch(`${API_URL}/api/admin/users`, {
-    headers: getAuthHeaders();   
+    headers: getAuthHeaders(),  
   });
 
-  if (!res.ok) throw new Error("Failed to fetch users");
+  if (!res.ok) {
+    throw new Error("Failed to fetch users");
+  }
   return res.json();
 };
 
-export const toggleUserStatus = async (id, token) => {
+export const toggleUserStatus = async (id) => {
   const res = await fetch(`${API_URL}/api/admin/users/${id}/status`, {
     method: "PATCH",
-   headers: getAuthHeaders(); 
+   headers: getAuthHeaders(),
   });
 
-  if (!res.ok) throw new Error("Failed to update user status");
+  if (!res.ok) {
+    throw new Error("Failed to update user status");
+  }
   return res.json();
 };
 
-export const verifyDriver = async (id, token) => {
+export const verifyDriver = async (id) => {
   const res = await fetch(`${API_URL}/api/admin/verify/${id}`, {
     method: "PATCH",
-    headers: getAuthHeaders(); 
+    headers: getAuthHeaders(),
   });
 
-  if (!res.ok) throw new Error("Failed to verify driver");
   return res.json();
 };
