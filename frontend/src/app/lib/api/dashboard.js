@@ -8,7 +8,7 @@ const getAuthHeaders = () => ({
 });
 
 
-export const fetchDashboardStats = async (token) => {
+export const fetchDashboardStats = async () => {
   const res = await fetch(`${API_URL}/api/admin/stats`, {
     headers: getAuthHeaders(),
   });
