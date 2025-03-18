@@ -83,7 +83,7 @@ const FindDriversContent = () => {
           rider: riderId,
           pickupLocation: pickup,
           dropoffLocation: dropoff,
-          driverId: driver._id,
+          driverId: driver.id,
           fare: fares[driver.id] || 0,
         },
         {
