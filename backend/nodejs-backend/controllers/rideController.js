@@ -4,13 +4,15 @@ const User = require('../models/User');
 const axios = require('axios');
 const redisClient = require('../config/redis');
 
+const API_URLL = process.env.FAST_API_URL
+
 const requestRide = asyncHandler(async (req, res) => {
     try {
         const { rider, pickupLocation, dropoffLocation, fare, driverId } = req.body;
 
         let selectedDriverId = driverId;
         if (!driverId) {
-            const response = await axios.get("https://neuroride-9.onrender.com/find-drivers", {
+            const response = await axios.get(`${API_URLL}/find-drivers`, {
                 params: { pickup: pickupLocation, dropoff: dropoffLocation },
             });
 
