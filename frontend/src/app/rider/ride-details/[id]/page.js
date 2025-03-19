@@ -114,7 +114,7 @@ const RideDetails = () => {
 
         const driverId = data.driver._id;
 
-        const socket = new WebSocket(`ws://localhost:8000/ws/track/${driverId}`);
+        const socket = new WebSocket(`ws://https://neuroride-9.onrender.com/ws/track/${driverId}`);
 
         socket.onmessage = (event) => {
           const data = JSON.parse(event.data);
