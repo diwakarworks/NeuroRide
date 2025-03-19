@@ -179,7 +179,7 @@ const JourneyPage = () => {
     }
 
     try {
-      await fetch("http://localhost:8000/api/driver/update-location", {
+      await fetch(`https://neuroride-9.onrender.com/api/driver/update-location`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -204,7 +204,7 @@ const JourneyPage = () => {
 
     setIsRefreshing(true);
     try {
-      const response = await fetch(`http://localhost:8000/ride/${rideId}/driver-location`);
+      const response = await fetch(`https://neuroride-9.onrender.com/ride/${rideId}/driver-location`);
       if (!response.ok) throw new Error("Failed to fetch driver location");
       const data = await response.json();
       setDriverLocation(data.location);
