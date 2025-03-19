@@ -12,7 +12,7 @@ const requestRide = asyncHandler(async (req, res) => {
 
         let selectedDriverId = driverId;
         if (!driverId) {
-            const response = await axios.get("http://127.0.0.1:8000/find-drivers", {
+            const response = await axios.get("https://neuroride-9.onrender.com/find-drivers", {
                 params: { pickup: pickupLocation, dropoff: dropoffLocation },
             });
 
