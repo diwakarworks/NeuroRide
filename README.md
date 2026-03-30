@@ -138,11 +138,11 @@ A full-stack AI powered ride-sharing platform with real-time driver matching, li
 | POST | `/api/admin/update-driver-balance` | Update driver balance |
 | GET | `/api/admin/payments/:driverId/:rideId` | Payments for specific ride |
 
+
 ## Screenshots
 
-![Landing Page] (./screenshots/admin.png)
-![Admin Dashboard]((./screenshots/neuroride.webp)
-
+![Landing Page](./screenshots/admin.png)
+![Admin Dashboard](./screenshots/neuroride.webp)
 
 ---
 
