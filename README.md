@@ -140,9 +140,9 @@ A full-stack AI powered ride-sharing platform with real-time driver matching, li
 
 ## Screenshots
 
-![Landing Page](file:///C:/Users/DIWAKAR/Downloads/neuroride.webp)
-![Admin Dashboard](<img width="1878" height="697" alt="admin" src="https://github.com/user-attachments/assets/87e48427-849c-47c6-bc22-8286370b15ed" />
-)
+![Landing Page] (./screenshots/admin.png)
+![Admin Dashboard]((./screenshots/neuroride.webp)
+
 
 ---
 
