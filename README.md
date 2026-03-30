@@ -138,7 +138,11 @@ A full-stack AI powered ride-sharing platform with real-time driver matching, li
 | POST | `/api/admin/update-driver-balance` | Update driver balance |
 | GET | `/api/admin/payments/:driverId/:rideId` | Payments for specific ride |
 
-> Full Postman collection with 25+ documented endpoints available on request.
+## Screenshots
+
+![Landing Page](file:///C:/Users/DIWAKAR/Downloads/neuroride.webp)
+![Admin Dashboard](<img width="1878" height="697" alt="admin" src="https://github.com/user-attachments/assets/87e48427-849c-47c6-bc22-8286370b15ed" />
+)
 
 ---
 
