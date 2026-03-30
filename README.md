@@ -12,6 +12,7 @@ A full-stack AI powered ride-sharing platform with real-time driver matching, li
 - [System Architecture](#system-architecture)
 - [Tech Stack](#tech-stack)
 - [API Endpoints](#api-endpoints)
+- [Screenshots](#screenshots)
 - [Getting Started](#getting-started)
 - [Deployment](#deployment)
 - [Future Enhancements](#future-enhancements)
