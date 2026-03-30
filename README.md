@@ -1,6 +1,6 @@
-# NeuroRide — Real-Time Ride-Sharing Platform
+# NeuroRide — AI Powered  Ride-Sharing Platform
 
-A full-stack ride-sharing platform with real-time driver matching, live ride tracking via WebSockets, dynamic pricing, and an admin dashboard for fleet and payment management.
+A full-stack AI powered ride-sharing platform with real-time driver matching, live ride tracking via WebSockets, dynamic pricing, and an admin dashboard for fleet and payment management.
 
 > **Demo:** https://www.loom.com/share/10cc465c74d4425b834dbe1757acf76e 
 
