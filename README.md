@@ -210,4 +210,4 @@ npm run dev
 
 ## Author
 
-**Diwakar G** — [Portfolio](https://my-portfolio-ten-sandy-76.vercel.app) | [LinkedIn](https://www.linkedin.com/in/diwakar-6719b0213) | [GitHub](https://github.com/diwakarworks)
+**Diwakar G** — [Portfolio](https://my-portfolio-ten-sandy-76.vercel.app) | [LinkedIn](https://www.linkedin.com/in/diwakar-6719b0213) | [GitHub](https://github.com/diwakarworks) 
